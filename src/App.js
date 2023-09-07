@@ -1,8 +1,8 @@
-
+import Layout from "./components/Layout/Layout";
 
 function App() {
   return (
-    <h1 className="border">Hello</h1>
+    <Layout/>
   )
 }
 
