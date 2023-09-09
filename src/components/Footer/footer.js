@@ -102,7 +102,7 @@ const footer = () => {
             <div className="border-t border-[#7c8a972f]">
               <p className="text-[#7c8a97]  flex items-center justify-center gap-1 pt-2 text-base leading-8">
                 <i class="ri-copyright-line"></ i>Copyright 
-                {/* {year} */}
+                {/* {year} */} 2023
                 , Developed by
                 Naincy Singh. All rights reserved.
               </p>
