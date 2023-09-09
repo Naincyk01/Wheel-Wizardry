@@ -56,11 +56,11 @@ a {
     font-size: 1.2rem;
   }
   
-  .section__description {
+  /* .section__description {
     color: #7c8a97;
     font-size: 0.9rem;
     line-height: 30px;
-  }
+  } */
   
   section {
     padding: 50px 0px;

@@ -77,7 +77,7 @@ const Header = () => {
                   >
                     <i class="ri-car-line text-4xl"></i>
                     <span className="text-2xl">
-                      Rent Car <br /> Service
+                     Wheel Wizardry  <br /> Service
                     </span>
                   </Link>
                 </h1>
@@ -129,12 +129,8 @@ const Header = () => {
       {/* nav */}
       <div className="py-[15px] px-0 bg-[#000d6b]">
         <Container>
-          <div className="
-
-          // navigation__wrapper
-
-           flex items-center justify-between">
-            <span>
+          <div className="navigation__wrapper flex items-center justify-between">
+            <span className="flex">
               <i class="ri-menu-line text-[#fff] text-xl cursor-pointer"
                 // onClick={toggleMenu}
               ></i>
@@ -160,7 +156,7 @@ const Header = () => {
             </div>
 
             <div>
-              <div className="border-1 border-[#e0f8ea2f] py-[7px] px-[12px] flex items-center rounded-2xl bg-[#020a4de9]">
+              <div className="border border-[#e0f8ea2f] py-[7px] px-[12px] flex items-center rounded-2xl bg-[#020a4de9]">
                 <input type="text" placeholder="Search"  className="bg-transparent border-none outline-none text-[#fff] cursor-pointer placeholder:text-sm"/>
                 <span>
                   <i class="ri-search-line cursor-pointer text-[#ffffff8c]"></i>
