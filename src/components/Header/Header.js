@@ -91,9 +91,9 @@ const Header = () => {
                 </span>
                 <div className="">
                   <h4 className="text-xl font-bold text-[#000d6b]">
-                    Bangladesh
+                    India
                   </h4>
-                  <h6 className="font-semibold">Sylhet City, Bangladesh</h6>
+                  <h6 className="font-semibold">Mumbai City, India</h6>
                 </div>
               </div>
             </Col>

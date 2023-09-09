@@ -71,7 +71,7 @@ const footer = () => {
             <div className="mb-4">
               <h5 className="text-[#fff] mb-4">Head Office</h5>
               <p className="font-light text-[#ffffff]">
-                123 Zindabazar, Sylhet, Bangladesh
+                123 Zindabazar, Mumbai City, India
               </p>
               <p className="font-light text-[#ffffff]">Phone: +0995345875365</p>
 
