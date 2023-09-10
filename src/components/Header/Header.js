@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const navLinks = [
   {
@@ -77,7 +77,7 @@ const Header = () => {
                   >
                     <i class="ri-car-line text-4xl"></i>
                     <span className="text-2xl">
-                     Wheel Wizardry  <br /> Service
+                      Wheel Wizardry <br /> Service
                     </span>
                   </Link>
                 </h1>
@@ -90,9 +90,7 @@ const Header = () => {
                   <i class="ri-earth-line text-4xl text-[#000d6b]"></i>
                 </span>
                 <div className="">
-                  <h4 className="text-xl font-bold text-[#000d6b]">
-                    India
-                  </h4>
+                  <h4 className="text-xl font-bold text-[#000d6b]">India</h4>
                   <h6 className="font-semibold">Mumbai City, India</h6>
                 </div>
               </div>
@@ -131,33 +129,39 @@ const Header = () => {
         <Container>
           <div className="navigation__wrapper flex items-center justify-between">
             <span className="flex">
-              <i class="ri-menu-line text-[#fff] text-xl cursor-pointer"
+              <i
+                class="ri-menu-line text-[#fff] text-xl cursor-pointer"
                 // onClick={toggleMenu}
               ></i>
             </span>
 
             <div
-          
-              // ref={menuRef} onClick={toggleMenu}
+
+            // ref={menuRef} onClick={toggleMenu}
             >
               <div className="flex items-center gap-x-11">
-                 {navLinks.map((item, index) => (
+                {navLinks.map((item, index) => (
                   <Link
                     to={item.path}
                     // className={(navClass) =>
                     //   navClass.isActive ? "nav__active nav__item" : "nav__item"
                     // }
-                    key={index} className="text-[#fff] no-underline transition-transform hover:scale-125 hover:duration-200 hover:text-[#f9a826]"
+                    key={index}
+                    className="text-[#fff] no-underline transition-transform hover:scale-125 hover:duration-200 hover:text-[#f9a826]"
                   >
                     {item.display}
                   </Link>
-                ))} 
+                ))}
               </div>
             </div>
 
             <div>
               <div className="border border-[#e0f8ea2f] py-[7px] px-[12px] flex items-center rounded-2xl bg-[#020a4de9]">
-                <input type="text" placeholder="Search"  className="bg-transparent border-none outline-none text-[#fff] cursor-pointer placeholder:text-sm"/>
+                <input
+                  type="text"
+                  placeholder="Search"
+                  className="bg-transparent border-none outline-none text-[#fff] cursor-pointer placeholder:text-sm"
+                />
                 <span>
                   <i class="ri-search-line cursor-pointer text-[#ffffff8c]"></i>
                 </span>
