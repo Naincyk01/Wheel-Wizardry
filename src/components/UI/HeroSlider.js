@@ -21,9 +21,9 @@ const HeroSlider = () => {
 
      {/* <Slider {...settings} className="overflow-hidden"> */}
 
-      <div className="h-[700px] max-w-full bg-cover bg-no-repeat bg-center mt-0 
-      bg-gradient-to-b from-[rgba(2,9,67,0.5)] to-[rgba(2,11,77,0.5)]" 
-      style = {{backgroundImage:`url(${Image})`}}>
+      {/* <div className="h-[700px] max-w-full bg-cover bg-no-repeat bg-center mt-0" 
+      style = {{backgroundImage:`url(${Image})`}}> */}
+      <div className="slider__item-01 h-[700px] max-w-full">
         <Container>
           <div className="pt-[150px]">
             <h4 className="text-lg mb-3">For Rent $70 Per Day</h4>
