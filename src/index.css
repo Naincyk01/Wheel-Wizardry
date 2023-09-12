@@ -68,6 +68,11 @@ a {
     color: #f9a826;
     
   }
+  .journey__time::before {
+    content: "Journey time";
+    margin-right: 0.8rem;
+    color: #7c8a97;
+  }
   /* .section__title {
     color: #000d6b;
     font-weight: 600;
