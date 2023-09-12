@@ -27,26 +27,26 @@ const AboutSection = ({ aboutClass }) => {
                 sunt.
               </p>
 
-              <div className="flex items-center gap-12">
-                <p className="text-[#7c8a97] text-base leading-8 flex items-center gap-x-8">
+              <div className="flex items-center gap-x-12">
+                <p className="text-[#7c8a97] text-base leading-8 flex items-center gap-2">
                   <i class="ri-checkbox-circle-line text-[#f9a826] text-lg "></i> Lorem ipsum dolor sit
                   amet.
                 </p>
 
                 <p className="text-[#7c8a97] text-base leading-8 flex items-center gap-2">
-                  <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor sit
+                  <i class="ri-checkbox-circle-line text-[#f9a826] text-lg "></i> Lorem ipsum dolor sit
                   amet.
                 </p>
               </div>
 
-              <div className="gap-x-8 flex items-center">
+              <div className="gap-x-12 flex items-center">
                 <p className="text-[#7c8a97] text-base leading-8 flex items-center gap-2">
                   <i class="ri-checkbox-circle-line text-[#f9a826] text-lg "></i> Lorem ipsum dolor sit
                   amet.
                 </p>
 
                 <p className="text-[#7c8a97] text-base leading-8 flex items-center gap-2">
-                  <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor sit
+                  <i class="ri-checkbox-circle-line text-[#f9a826] text-lg "></i> Lorem ipsum dolor sit
                   amet.
                 </p>
               </div>
