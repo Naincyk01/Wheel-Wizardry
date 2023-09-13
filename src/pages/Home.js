@@ -9,6 +9,7 @@ import carData from "../assets/data/carData";
 import CarItem from "../components/UI/CarItem";
 import BecomeDriverSection from '../components/UI/BecomeDriverSection';
 import Testimonial from '../components/UI/Testimonial';
+import BlogList from '../components/UI/BlogList';
 //import Image from "../assets/all_images/toyota.png"
 const Home = () => {
   return (
@@ -84,6 +85,18 @@ const Home = () => {
         </Container>
       </section>
 
+ {/* =============== blog section =========== */}
+ <section>
+        <Container>
+          <Row>
+            <Col lg="12" className="mb-5 text-center">
+              <h6 className="text-[#f9a826] font-semibold text-xl">Explore our blogs</h6>
+              <h2 className="text-[#000d6b] font-semibold text-3xl">Latest Blogs</h2>
+            </Col>
+            <BlogList />
+          </Row>
+        </Container>
+      </section>
    </Helmet>
   )
 }
