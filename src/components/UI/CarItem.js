@@ -7,14 +7,14 @@ const CarItem = (props) => {
   const { imgUrl, model, carName, automatic, speed, price } = props.item;
 
   return (
-    <Col lg="4" md="4" sm="6" className="mb-5">
-      <div className="border border-[#7c8a9736] p-5 rounded-md">
+    <Col lg="4" md="4" sm="6" className="mb-4">
+      <div className="border border-[#7c8a9736] p-3 rounded-md">
         <div className="car__img">
           <img src={imgUrl} alt="" className="w-100" />
         </div>
 
-        <div className="car__item-content mt-4">
-          <h4 className="text-[#000d6b] font-semibold text-3xl text-center">{carName}</h4>
+        <div className="mt-2">
+          <h4 className="text-[#000d6b] font-semibold text-2xl text-center">{carName}</h4>
           <h6 className="rent__price text-center text-xl font-semibold">
             ${price}.00 <span>/ Day</span>
           </h6>
