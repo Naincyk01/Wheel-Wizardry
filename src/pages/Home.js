@@ -8,6 +8,7 @@ import FindCarForm from "../components/UI/FindCarform";
 import carData from "../assets/data/carData";
 import CarItem from "../components/UI/CarItem";
 import BecomeDriverSection from '../components/UI/BecomeDriverSection';
+import Testimonial from '../components/UI/Testimonial';
 //import Image from "../assets/all_images/toyota.png"
 const Home = () => {
   return (
@@ -68,6 +69,21 @@ const Home = () => {
       </section>
        {/* =========== become a driver section ============ */}
        <BecomeDriverSection/>
+
+        {/* =========== testimonial section =========== */}
+      <section>
+        <Container>
+          <Row>
+            <Col lg="12" className="mb-4 text-center">
+              <h6 className="text-[#f9a826] font-semibold text-xl">Our clients says</h6>
+              <h2 className="text-[#000d6b] font-semibold text-3xl">Testimonials</h2>
+            </Col>
+
+            <Testimonial />
+          </Row>
+        </Container>
+      </section>
+
    </Helmet>
   )
 }
