@@ -7,7 +7,7 @@ import { Container, Row, Col } from "reactstrap";
 import BecomeDriverSection from "../components/UI/BecomeDriverSection";
 
 import driveImg from "../assets/all_images/drive.jpg";
-// import OurMembers from "../components/UI/OurMembers";
+ import OurMembers from "../components/UI/OurMembers";
 
 const About = () => {
   return (
@@ -71,7 +71,7 @@ const About = () => {
               <h6 className="text-[#f9a826] font-semibold text-xl">Experts</h6>
               <h2 className="text-[#000d6b] font-semibold text-3xl">Our Members</h2>
             </Col>
-            {/* <OurMembers /> */}
+            <OurMembers />
           </Row>
         </Container>
       </section>
