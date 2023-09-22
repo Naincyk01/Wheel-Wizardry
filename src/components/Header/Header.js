@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 
@@ -27,10 +27,20 @@ const navLinks = [
 ];
 
 const Header = () => {
+  
+  const [style, setStyle] = useState("hidden");
+  function Handleclick() {
+    if(style==="hidden"){
+      setStyle("")
+    }
+   else if(style===""){
+setStyle("hidden")
+   }
+  }
   return (
     <header>
       {/* header top */}
-      <div className="bg-[#000d6b] text-[#fff] py-[10px] px-0">
+      <div className="bg-[#000d6b] text-[#fff] py-[10px] px-0 max-md:hidden">
         <Container>
           <Row>
             <Col lg="6" md="6" sm="6">
@@ -65,7 +75,7 @@ const Header = () => {
 
       {/* header middle */}
 
-      <div className="py-[20px] px-0">
+      <div className="py-[20px] px-0 max-md:hidden">
         <Container>
           <Row>
             <Col lg="4" md="3" sm="4">
@@ -128,18 +138,18 @@ const Header = () => {
       <div className="py-[15px] px-0 bg-[#000d6b]">
         <Container>
           <div className="navigation__wrapper flex items-center justify-between">
-            <span className="flex">
+            <span className="max-md:block hidden">
               <i
                 class="ri-menu-line text-[#fff] text-xl cursor-pointer"
-                // onClick={toggleMenu}
+                onClick={Handleclick}
               ></i>
             </span>
 
             <div
-
-            // ref={menuRef} onClick={toggleMenu}
+              className={`max-md:w-full max-md:h-full max-md:fixed max-md:top-0 max-md:left-0 max-md:z-[9999]  ${style}`}
+              // onClick={Handleclick}
             >
-              <div className="flex items-center gap-x-11">
+              <div className="flex items-center gap-x-11 max-md:w-[250px] max-md:h-full max-md:mt-14 max-md:bg-[#fff] max-md:flex max-md:items-center max-md:flex-col max-md:gap-y-8 max-md:justify-center">
                 {navLinks.map((item, index) => (
                   <Link
                     to={item.path}
@@ -147,7 +157,7 @@ const Header = () => {
                     //   navClass.isActive ? "nav__active nav__item" : "nav__item"
                     // }
                     key={index}
-                    className="text-[#fff] no-underline transition-transform hover:scale-125 hover:duration-200 hover:text-[#f9a826]"
+                    className="text-[#fff] no-underline transition-transform hover:scale-125 hover:duration-200 hover:text-[rgb(249,168,38)] max-md:text-[#000d6b] max-md:font-semibold max-md:text-sm"
                   >
                     {item.display}
                   </Link>
@@ -155,7 +165,7 @@ const Header = () => {
               </div>
             </div>
 
-            <div>
+            <div className="max-md:hidden">
               <div className="border border-[#e0f8ea2f] py-[7px] px-[12px] flex items-center rounded-2xl bg-[#020a4de9]">
                 <input
                   type="text"
