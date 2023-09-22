@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import ava01 from "../../assets/all_images/ava_1.jpg";
 import ava02 from "../../assets/all_images/ava_2.jpg";
 import ava03 from "../../assets/all_images/ava_3.jpg";
-import ava04 from "../../assets/all_images/ava_4.jpg"
+import ava04 from "../../assets/all_images/ava_4.jpg";
 
 const OUR__MEMBERS = [
   {
@@ -49,6 +49,8 @@ const OUR__MEMBERS = [
 ];
 
 const OurMembers = () => {
+  // const style = 'bg-red-300 border-4'
+
   return (
     <>
       {OUR__MEMBERS.map((item, index) => (
@@ -58,6 +60,7 @@ const OurMembers = () => {
               <img src={item.imgUrl} alt="" className="w-full rounded" />
 
               <div className="single__member-social">
+                {/* <Link to={item.fbUrl} className={`no-underline cursor-pointer hover:${style}`}> */}
                 <Link to={item.fbUrl} className="no-underline cursor-pointer">
                   <i class="ri-facebook-line w-7 h-7 text-[#000d6b] flex items-center justify-center bg-[#fff] rounded-full text-sm font-semibold"></i>
                 </Link>
@@ -65,7 +68,10 @@ const OurMembers = () => {
                   <i class="ri-twitter-line  w-7 h-7 text-[#000d6b] flex items-center justify-center bg-[#fff] rounded-full text-sm font-semibold"></i>
                 </Link>
 
-                <Link to={item.linkedinUrl} className="no-underline cursor-pointer">
+                <Link
+                  to={item.linkedinUrl}
+                  className="no-underline cursor-pointer"
+                >
                   <i class="ri-linkedin-line  w-7 h-7 text-[#000d6b] flex items-center justify-center bg-[#fff] rounded-full text-sm font-semibold"></i>
                 </Link>
 
@@ -75,7 +81,9 @@ const OurMembers = () => {
               </div>
             </div>
 
-            <h6 className="text-center mb-0 mt-3 text-[#7c8a97]">{item.name}</h6>
+            <h6 className="text-center mb-0 mt-3 text-[#7c8a97]">
+              {item.name}
+            </h6>
             <p className="text-[#7c8a97] text-base leading-8 text-center">
               {item.experience}
             </p>
