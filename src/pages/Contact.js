@@ -33,7 +33,7 @@ const Contact = () => {
         <Container>
           <Row>
             <Col lg="7" md="7">
-              <h6 className="fw-bold mb-4">Get In Touch</h6>
+              <h6 className="font-bold mb-4">Get In Touch</h6>
 
               <Form>
                 <FormGroup className="contact__form">
@@ -46,11 +46,11 @@ const Contact = () => {
                   <textarea
                     rows="5"
                     placeholder="Message"
-                    className="textarea"
+                    className="textarea border"
                   ></textarea>
                 </FormGroup>
 
-                <button className=" contact__btn" type="submit">
+                <button className="py-[7px] px-[15px] bg-[#000d6b] text-[#fff] border-none outline-none rounded-md" type="submit">
                   Send Message
                 </button>
               </Form>
@@ -58,28 +58,28 @@ const Contact = () => {
 
             <Col lg="5" md="5">
               <div className="contact__info">
-                <h6 className="fw-bold">Contact Information</h6>
-                <p className="section__description mb-0">
+                <h6 className="font-bold">Contact Information</h6>
+                <p className="text-[#7c8a97] text-base leading-8 mb-0">
                   123 ZindaBazar, Sylhet, Bangladesh
                 </p>
-                <div className=" d-flex align-items-center gap-2">
-                  <h6 className="fs-6 mb-0">Phone:</h6>
-                  <p className="section__description mb-0">+88683896366</p>
+                <div className="flex items-center gap-2">
+                  <h6 className="mb-0 text-lg">Phone:</h6>
+                  <p className="text-[#7c8a97] text-base leading-8 mb-0">+88683896366</p>
                 </div>
 
-                <div className=" d-flex align-items-center gap-2">
-                  <h6 className="mb-0 fs-6">Email:</h6>
-                  <p className="section__description mb-0">example@gmail.com</p>
+                <div className="flex align-items-center gap-2">
+                  <h6 className="mb-0 text-lg">Email:</h6>
+                  <p className="text-[#7c8a97] text-base leading-8 mb-0">example@gmail.com</p>
                 </div>
 
-                <h6 className="fw-bold mt-4">Follow Us</h6>
+                <h6 className="font-bold mt-4">Follow Us</h6>
 
-                <div className=" d-flex align-items-center gap-4 mt-3">
+                <div className="flex items-center gap-4 mt-3">
                   {socialLinks.map((item, index) => (
                     <Link
                       to={item.url}
                       key={index}
-                      className="social__link-icon"
+                      className="no-underline text-[#000d6b] font-medium text-xl"
                     >
                       <i class={item.icon}></i>
                     </Link>
