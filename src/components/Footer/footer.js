@@ -26,7 +26,7 @@ const quickLinks = [
     display: "Contact",
   },
 ];
-const footer = () => {
+const Footer = () => {
   return (
     <footer className="bg-[#000d6b] pb-4 pt-12">
       <Container>
@@ -114,4 +114,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;
