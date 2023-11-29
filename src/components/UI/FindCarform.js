@@ -3,7 +3,7 @@ import { Form, FormGroup } from "reactstrap";
 
 const FindCarform = () => {
   return (
-    <Form className="bg-[#fff] pt-14 pb-12 pl-4 pr-4">
+    <Form className="bg-[#fff] pt-14 pb-12 pl-4 pr-4 max-lg:py-[30px] max-lg:px-[10px]">
       <div className=" flex items-center justify-between flex-wrap">
 
         <FormGroup className="w-[30%] mb-0">

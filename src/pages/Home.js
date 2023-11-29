@@ -25,8 +25,8 @@ const Home = () => {
           <Container>
             <Row className="bg-[#fff] shadow-2xl shadow-gray-500">
               <Col lg="4" md="4">
-                <div className=" find_cars-left max-w-full h-[200px] mt-3 mb-3">
-                  <h2 className='font-semibold text-3xl'>Find your best car here</h2>
+                <div className="find_cars-left max-w-full h-[200px] mt-3 mb-3 max-lg:py-[65px] max-lg:px-[22px]">
+                  <h2 className='font-semibold text-3xl max-md:text-2xl'>Find your best car here</h2>
                 </div>
               </Col>
 

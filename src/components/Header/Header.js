@@ -29,26 +29,15 @@ const navLinks = [
 const Header = () => {
   
   const [sidebarVisible, setSidebarVisible] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  
 
   const handleToggleSidebar = () => {
     setSidebarVisible(!sidebarVisible);
   };
-
   const handleNavClick = () => {
     setSidebarVisible(false);
   };
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  
   return (
     <header>
       {/* header top */}
@@ -157,26 +146,37 @@ const Header = () => {
               ></i>
             </span>
 
-            <div
-              className={`max-md:w-full max-md:h-full max-md:fixed max-md:top-0 max-md:left-0 max-md:z-[9999] max-md:bg-[#000d6b] max-md:bg-opacity-60 ${ sidebarVisible && isMobile ? "" : "hidden"}`}
-    
-            >
-              <div className="flex items-center gap-x-11 max-md:w-[250px] max-md:h-full max-md:bg-[#fff] max-md:flex max-md:items-center max-md:flex-col max-md:gap-y-8 max-md:justify-center">
+
+          <div className={`max-md:w-full max-md:h-full max-md:fixed max-md:top-0 max-md:left-0 max-md:z-[9999] max-md:bg-[#000d6b] max-md:bg-opacity-60 ${ sidebarVisible ? "" : "hidden"}`}>
+              <div className="max-md:w-[250px] max-md:h-full max-md:bg-[#fff] max-md:flex max-md:items-center max-md:flex-col max-md:gap-y-8 max-md:justify-center">
                 {navLinks.map((item, index) => (
                   <Link
-                    to={item.path}
-                    // className={(navClass) =>
-                    //   navClass.isActive ? "nav__active nav__item" : "nav__item"
-                    // }
-                    key={index}
-                    className="text-[#fff] no-underline transition-transform hover:scale-125 hover:duration-200 hover:text-[rgb(249,168,38)] max-md:text-[#000d6b] max-md:font-semibold max-md:text-sm"
-                    onClick={handleNavClick}
+                  to={item.path}
+                  // className={(navClass) =>
+                  //   navClass.isActive ? "nav__active nav__item" : "nav__item"
+                  // }
+                  key={index}
+                  className="no-underline max-md:transition-transform max-md:hover:scale-125 max-md:hover:duration-200 max-md:hover:text-[rgb(249,168,38)] max-md:text-[#000d6b] max-md:font-semibold max-md:text-sm md:hidden"
+                  onClick={handleNavClick}
                   >
                     {item.display}
                   </Link>
                 ))}
-              </div>
             </div>
+            </div>
+                 {/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */}
+              <div className="flex items-center gap-x-11 max-md:hidden">
+                {navLinks.map((item, index) => (
+                  <Link
+                  to={item.path}
+                  key={index}
+                  className="text-[#fff] no-underline transition-transform hover:scale-125 hover:duration-200 hover:text-[rgb(249,168,38)]">
+                    {item.display}
+                  </Link>
+                ))}
+              </div>
+           
+                {/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */}
 
             <div className="max-md:hidden">
               <div className="border border-[#e0f8ea2f] py-[7px] px-[12px] flex items-center rounded-2xl bg-[#020a4de9]">
