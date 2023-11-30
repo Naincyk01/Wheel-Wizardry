@@ -26,10 +26,10 @@ const HeroSlider = () => {
       style = {{backgroundImage:`url(${Image})`}}> */}
       <div className="slider__item-01 h-[700px] max-w-full max-lg:h-[530px] max-lg:max-w-[100vw] max-md:h-[450px]">
         <Container>
-          <div className="pt-[150px] max-lg:mt-[-50px]">
+          <div className="pt-[150px] max-lg:mt-[-50px] max-sm:mt-[-120px]">
             <h4 className="text-lg mb-3 text-white">For Rent $70 Per Day</h4>
-            <h1 className="text-5xl font-semibold mb-4 text-white max-lg:text-3xl max-md:text-2xl">Reserve Now and Get 50% Off</h1>
-            <button className="py-[7px] px-[15px] border-none outline-none rounded-md transition-transform hover:scale-125 hover:duration-200 hover:text-[#fff] hover:bg-[#000c6bd0] bg-[#fff] text-[#000d6b]  mt-4">
+            <h1 className="text-5xl font-semibold mb-4 text-white max-lg:text-3xl max-md:text-xl">Reserve Now and Get 50% Off</h1>
+            <button className="py-[7px] px-[15px] border-none outline-none rounded-md transition-transform hover:scale-125 hover:duration-200 hover:text-[#fff] hover:bg-[#000c6bd0] bg-[#fff] text-[#000d6b] mt-2">
               <Link to="/cars" className="text-[#000d6b] no-underline font-semibold text-xl">Reserve Now</Link>
             </button>
           </div>
@@ -42,10 +42,10 @@ const HeroSlider = () => {
 
       <div className="slider__item-02 h-[700px] max-w-full max-lg:h-[530px] max-lg:max-w-[100vw] max-md:h-[450px]">
       <Container>
-          <div className="pt-[150px] max-lg:mt-[-50px]">
-            <h4 className="text-lg mb-3 text-white max-lg:text-3xl max-md:text-2xl">For Rent $70 Per Day</h4>
-            <h1 className="text-5xl font-semibold mb-4 text-white">Reserve Now and Get 50% Off</h1>
-            <button className="py-[7px] px-[15px] border-none outline-none rounded-md transition-transform hover:scale-125 hover:duration-200 hover:text-[#fff] hover:bg-[#000c6bd0] bg-[#fff] text-[#000d6b]  mt-4">
+          <div className="pt-[150px] max-lg:mt-[-50px] max-sm:mt-[-120px]">
+            <h4 className="text-lg mb-3 text-white">For Rent $70 Per Day</h4>
+            <h1 className="text-5xl font-semibold mb-4 text-white max-lg:text-3xl max-md:text-xl">Reserve Now and Get 50% Off</h1>
+            <button className="py-[7px] px-[15px] border-none outline-none rounded-md transition-transform hover:scale-125 hover:duration-200 hover:text-[#fff] hover:bg-[#000c6bd0] bg-[#fff] text-[#000d6b] mt-2">
               <Link to="/cars" className="text-[#000d6b] no-underline font-semibold">Reserve Now</Link>
             </button>
           </div>
@@ -58,10 +58,10 @@ const HeroSlider = () => {
 
       <div className="slider__item-03 h-[700px] max-w-full max-lg:h-[530px] max-lg:max-w-[100vw] max-md:h-[450px]">
          <Container>
-          <div className="pt-[150px] max-lg:mt-[-50px]">
-             <h4 className="text-lg mb-3 text-white max-lg:text-3xl max-md:text-2xl">For Rent $70 Per Day</h4>
-             <h1 className="text-5xl font-semibold text-white mb-4">Reserve Now and Get 50% Off</h1>
-             <button className=" py-[7px] px-[15px] border-none outline-none rounded-md transition-transform hover:scale-125 hover:duration-200 hover:text-[#fff] hover:bg-[#000c6bd0] bg-[#fff] text-[#000d6b]  mt-4">
+          <div className="pt-[150px] max-lg:mt-[-50px] max-sm:mt-[-120px]">
+             <h4 className="text-lg mb-3 text-white">For Rent $70 Per Day</h4>
+             <h1 className="text-5xl font-semibold text-white mb-4 max-lg:text-3xl max-md:text-xl">Reserve Now and Get 50% Off</h1>
+             <button className=" py-[7px] px-[15px] border-none outline-none rounded-md transition-transform hover:scale-125 hover:duration-200 hover:text-[#fff] hover:bg-[#000c6bd0] bg-[#fff] text-[#000d6b] mt-2">
                <Link to="/cars" className="text-[#000d6b] no-underline font-semibold">Reserve Now</Link>
              </button>
            </div>

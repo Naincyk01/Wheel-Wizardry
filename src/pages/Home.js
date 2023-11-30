@@ -21,12 +21,12 @@ const Home = () => {
 
       <HeroSlider/>
 
-      <div className="absolute bottom-[-150px] z-11 w-full">
+      <div className="absolute bottom-[-150px] z-11 w-full max-lg:bottom-[-100px] max-sm:bottom-[-330px] max-md:bottom-[-290px]">
           <Container>
             <Row className="bg-[#fff] shadow-2xl shadow-gray-500">
               <Col lg="4" md="4">
-                <div className="find_cars-left max-w-full h-[200px] mt-3 mb-3 max-lg:py-[65px] max-lg:px-[22px]">
-                  <h2 className='font-semibold text-3xl max-md:text-2xl'>Find your best car here</h2>
+                <div className="find_cars-left max-w-full h-[200px] mt-3 mb-3 max-lg:py-[65px] max-lg:px-[22px] max-md:pt-[20px] max-md:pb-0 max-md:bg-[#fff] max-md:text-center">
+                  <h2 className='font-semibold text-3xl max-md:text-2xl max-sm:text-base'>Find your best car here</h2>
                 </div>
               </Col>
 
