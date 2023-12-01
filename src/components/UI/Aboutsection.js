@@ -15,9 +15,9 @@ const AboutSection = ({ aboutClass }) => {
       <Container>
         <Row>
           <Col lg="6" md="6">
-            <div className="about__section-content">
+            <div className="about__section-content max-lg:mt-10">
               <h4 className="text-[#f9a826] font-semibold text-xl">About Us</h4>
-              <h2 className="text-[#000d6b] font-semibold text-3xl">Welcome to car rent service</h2>
+              <h2 className="text-[#000d6b] font-semibold text-3xl max-lg:text-2xl">Welcome to car rent service</h2>
               <p className="text-[#7c8a97] text-base leading-8">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Voluptatum blanditiis esse accusantium dignissimos labore
@@ -27,25 +27,25 @@ const AboutSection = ({ aboutClass }) => {
                 sunt.
               </p>
 
-              <div className="flex items-center gap-x-12">
-                <p className="text-[#7c8a97] text-base leading-8 flex items-center gap-2">
+              <div className="flex items-center gap-x-12 max-lg:gap-x-3">
+                <p className="text-[#7c8a97] text-base leading-8 flex items-center gap-2 max-lg:text-sm">
                   <i class="ri-checkbox-circle-line text-[#f9a826] text-lg "></i> Lorem ipsum dolor sit
                   amet.
                 </p>
 
-                <p className="text-[#7c8a97] text-base leading-8 flex items-center gap-2">
+                <p className="text-[#7c8a97] text-base leading-8 flex items-center gap-2 max-lg:text-sm ">
                   <i class="ri-checkbox-circle-line text-[#f9a826] text-lg "></i> Lorem ipsum dolor sit
                   amet.
                 </p>
               </div>
 
-              <div className="gap-x-12 flex items-center">
-                <p className="text-[#7c8a97] text-base leading-8 flex items-center gap-2">
+              <div className="gap-x-12 flex items-center max-lg:gap-x-3">
+                <p className="text-[#7c8a97] text-base leading-8 flex items-center gap-2 max-lg:text-sm">
                   <i class="ri-checkbox-circle-line text-[#f9a826] text-lg "></i> Lorem ipsum dolor sit
                   amet.
                 </p>
 
-                <p className="text-[#7c8a97] text-base leading-8 flex items-center gap-2">
+                <p className="text-[#7c8a97] text-base leading-8 flex items-center gap-2 max-lg:text-sm">
                   <i class="ri-checkbox-circle-line text-[#f9a826] text-lg "></i> Lorem ipsum dolor sit
                   amet.
                 </p>
