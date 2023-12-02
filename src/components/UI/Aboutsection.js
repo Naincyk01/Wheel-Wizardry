@@ -12,10 +12,11 @@ const AboutSection = ({ aboutClass }) => {
           : { marginTop: "280px" }
       }
     >
-      <Container>
-        <Row>
-          <Col lg="6" md="6">
-            <div className="about__section-content max-lg:mt-10">
+    
+
+         <div className="flex w-full h-full border-2 border-black justify-center max-lg:mt-10">
+        
+            <div className=" border-2 border-blue-700 h-[400px] w-[600px] flex flex-col items-center">
               <h4 className="text-[#f9a826] font-semibold text-xl">About Us</h4>
               <h2 className="text-[#000d6b] font-semibold text-3xl max-lg:text-2xl">Welcome to car rent service</h2>
               <p className="text-[#7c8a97] text-base leading-8">
@@ -26,13 +27,11 @@ const AboutSection = ({ aboutClass }) => {
                 neque sit ad temporibus quam similique dolor ipsam praesentium
                 sunt.
               </p>
-
               <div className="flex items-center gap-x-12 max-lg:gap-x-3">
                 <p className="text-[#7c8a97] text-base leading-8 flex items-center gap-2 max-lg:text-sm">
                   <i class="ri-checkbox-circle-line text-[#f9a826] text-lg "></i> Lorem ipsum dolor sit
                   amet.
                 </p>
-
                 <p className="text-[#7c8a97] text-base leading-8 flex items-center gap-2 max-lg:text-sm ">
                   <i class="ri-checkbox-circle-line text-[#f9a826] text-lg "></i> Lorem ipsum dolor sit
                   amet.
@@ -44,22 +43,19 @@ const AboutSection = ({ aboutClass }) => {
                   <i class="ri-checkbox-circle-line text-[#f9a826] text-lg "></i> Lorem ipsum dolor sit
                   amet.
                 </p>
-
                 <p className="text-[#7c8a97] text-base leading-8 flex items-center gap-2 max-lg:text-sm">
                   <i class="ri-checkbox-circle-line text-[#f9a826] text-lg "></i> Lorem ipsum dolor sit
                   amet.
                 </p>
               </div>
-            </div>
-          </Col>
 
-          <Col lg="6" md="6">
-            <div className="about__img">
-              <img src={aboutImg} alt="" className="w-100" />
             </div>
-          </Col>
-        </Row>
-      </Container>
+
+            <div className="about__img border-2 border-pink-100 w-[600px] h-[300px] flex justify-center ml-10 mt-10">
+              <img src={aboutImg} alt="" className="w-[400px] h-[300px]" />
+            </div>
+          
+       </div>
     </section>
   );
 };
