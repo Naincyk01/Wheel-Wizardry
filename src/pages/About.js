@@ -13,7 +13,7 @@ const About = () => {
   return (
     <Helmet title="About">
       <CommonSection title="About Us" />
-      <Aboutsection aboutClass="aboutPage" />
+      <Aboutsection />
 
       <section className="about__page-section">
         <Container>

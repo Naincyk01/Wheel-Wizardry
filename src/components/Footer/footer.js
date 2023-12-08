@@ -28,7 +28,7 @@ const quickLinks = [
 ];
 const Footer = () => {
   return (
-    <footer className="bg-[#000d6b] pb-4 pt-12">
+    <footer className="bg-[#000d6b] pb-4 pt-12 borde border-black">
       <Container>
         <Row>
           <Col lg="4" md="4" sm="12">

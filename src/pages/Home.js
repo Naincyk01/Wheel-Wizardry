@@ -17,11 +17,11 @@ const Home = () => {
 
      {/* ============= hero section =========== */}
 
-    <section className='p-0 relative z-10 mb-[200px]'>
+    <section className='p-0 relative z-10'>
 
       <HeroSlider/>
 
-      <div className="absolute bottom-[-150px] z-11 w-full max-lg:bottom-[-100px] max-sm:bottom-[-330px] max-md:bottom-[-290px]">
+      <div className="absolute bottom-[-150px] z-11 w-full max-lg:bottom-[-100px] max-md:bottom-[-290px] max-sm:hidden max-sm:h-0 max-sm:bottom-0 max-sm:w-0">
           <Container>
             <Row className="bg-[#fff] shadow-2xl shadow-gray-500">
               <Col lg="4" md="4">
@@ -36,10 +36,15 @@ const Home = () => {
             </Row>
           </Container>
         </div>
+    
 
     </section>
       {/* =========== about section ================ */}
+      <div className='sm:mt-[300px]'>
+
       <AboutSection />
+      </div>
+
        {/* ========== services section ============ */}
        <section>
         <Container>
