@@ -6,12 +6,12 @@ const AboutSection = () => {
     <section
       className="about__section"
     >
-     <div className="flex w-full h-full justify-center max-md:flex max-md:flex-col max-md:items-center">
+     <div className="flex w-full h-full justify-center items-center max-md:flex max-md:flex-col">
         
-            <div className="h-[450px] w-[700px] flex flex-col items-center max-md:h-full max-md:w-full">
+            <div className="h-full w-full flex flex-col items-center">
               <h4 className="text-[#f9a826] font-semibold text-xl">About Us</h4>
               <h2 className="text-[#000d6b] font-semibold text-3xl max-lg:text-2xl">Welcome to car rent service</h2>
-              <p className="text-[#7c8a97] text-base leading-8">
+              <p className="text-[#7c8a97] text-base leading-8 ml-2">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Voluptatum blanditiis esse accusantium dignissimos labore
                 laborum. Veniam, corporis mollitia temporibus, in quaerat vero
@@ -44,8 +44,8 @@ const AboutSection = () => {
 
             </div>
 
-            <div className="about__img w-[400px] h-[300px] flex justify-center mt-10 ml-10 max-md:w-[600px] max-md:ml-0 border-2 border-black max-sm:w-[400px]">
-              <img src={aboutImg} alt="" className="w-[400px] h-[300px] max-md:w-[500px] max-sm:w-[400px]" />
+            <div className="about__img w-full h-full flex justify-center mt-10">
+              <img src={aboutImg} alt="" className="" />
             </div>
           
        </div>

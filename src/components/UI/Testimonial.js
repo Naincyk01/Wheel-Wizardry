@@ -37,8 +37,8 @@ const Testimonial = () => {
   };
 
   return (
-    <Slider {...settings}>
-      <div className="testimonial py-4 px-3">
+    <Slider {...settings} className="flex justify-center h-full w-full overflow-hidden">
+      <div className="testimonial py-4 px-3 flex">
         <p className="text-[#7c8a97] text-base leading-8">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni
           explicabo molestias recusandae repudiandae, dolor, sapiente placeat
@@ -56,7 +56,7 @@ const Testimonial = () => {
         </div>
       </div>
 
-      <div className="testimonial py-4 px-3">
+      <div className="testimonial py-4 px-3 flex">
         <p className="text-[#7c8a97] text-base leading-8">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni
           explicabo molestias recusandae repudiandae, dolor, sapiente placeat
@@ -74,7 +74,7 @@ const Testimonial = () => {
         </div>
       </div>
 
-      <div className="testimonial py-4 px-3">
+      <div className="testimonial py-4 px-3 flex">
         <p className="text-[#7c8a97] text-base leading-8">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni
           explicabo molestias recusandae repudiandae, dolor, sapiente placeat
@@ -92,7 +92,7 @@ const Testimonial = () => {
         </div>
       </div>
 
-      <div className="testimonial py-4 px-3">
+      <div className="testimonial py-4 px-3 flex">
         <p className="text-[#7c8a97] text-base leading-8">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni
           explicabo molestias recusandae repudiandae, dolor, sapiente placeat

@@ -98,7 +98,7 @@ const BlogDetails = () => {
             </Col>
 
             <Col lg="4" md="4">
-              <div className="recent__post mb-4">
+              <div className="recent__post mb-4 mt-8">
                 <h5 className=" font-bold">Recent Posts</h5>
               </div>
               {blogData.map((item) => (

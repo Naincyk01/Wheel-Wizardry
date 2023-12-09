@@ -8,9 +8,9 @@ const CarItem = (props) => {
 
   return (
     <Col lg="4" md="4" sm="6" className="mb-4">
-      <div className="border border-[#7c8a9736] p-3 rounded-md">
+      <div className="border border-[#7c8a9736] p-3 rounded-md h-full w-full">
         <div className="car__img">
-          <img src={imgUrl} alt="" className="w-100" />
+          <img src={imgUrl} alt="" className="" />
         </div>
 
         <div className="mt-2">
@@ -19,7 +19,7 @@ const CarItem = (props) => {
             ${price}.00 <span>/ Day</span>
           </h6>
 
-          <div className="car__item-info flex items-center justify-between mt-3 mb-4">
+          <div className="car__item-info flex items-center justify-between mt-3 mb-4 max-lg:text-xs">
             <span className="flex items-center gap-1">
               <i class="ri-car-line text-[#f9a826] text-lg"></i> {model}
             </span>

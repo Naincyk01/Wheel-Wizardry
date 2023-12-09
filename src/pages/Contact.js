@@ -57,7 +57,7 @@ const Contact = () => {
             </Col>
 
             <Col lg="5" md="5">
-              <div className="contact__info">
+              <div className="contact__info max-md:mt-8">
                 <h6 className="font-bold">Contact Information</h6>
                 <p className="text-[#7c8a97] text-base leading-8 mb-0">
                   123 ZindaBazar, Sylhet, Bangladesh
